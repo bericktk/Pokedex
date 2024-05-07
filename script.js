@@ -25,7 +25,8 @@ async function renderPokemon(pokemon){
         pokemonImage.style.display = 'block'
         pokemonName.innerHTML = data.name
         pokemonNumber.innerHTML = data.id
-        pokemonImage.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default']
+        //pokemonImage.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default']
+        pokemonImage.src = data['sprites']['other']['official-artwork']['front_default']
         input.value = '';
         searchPokemon = data.id;
     } else {
